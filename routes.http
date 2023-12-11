@@ -1,0 +1,31 @@
+POST http://localhost:3333/artista
+Content-Type: application/json
+
+{
+    "nome": "Jeon Jungkook",        
+    "idade": 26,
+    "generomusical": "Dance/eletrônica"
+}
+
+###
+
+GET http://localhost:3333/artista
+
+###
+
+GET http://localhost:3333/artista?search= Jungkook
+
+###
+
+PUT  http://localhost:3333/artista/88bb3793-3d74-4f9d-8504-8b5a8fc585d7
+Content-Type: application/json
+
+{
+    "nome": "Choi Seungcheol",
+    "idade": 28,
+    "generomusical": "Pop Coreano"
+}
+
+###
+
+DELETE http://localhost:3333/artista/88bb3793-3d74-4f9d-8504-8b5a8fc585d7
